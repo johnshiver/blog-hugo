@@ -1,0 +1,20 @@
+languageCode = "en-us"
+baseURL = "http://www.johnshiver.org"
+title = "john-shiver"
+themesDir = "themes/"
+theme = "m10c"
+paginate = 5
+
+[params]
+  author = "John Shiver"
+  description = "Writing Software in NYC"
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/johnshiver"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/TrustyJohn"
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/johnshiver/"
+
