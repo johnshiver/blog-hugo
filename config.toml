@@ -1,6 +1,6 @@
 languageCode = "en-us"
 baseUrl = "/"
-title = "john-shiver"
+title = "john-shiver-test"
 themesDir = "themes/"
 theme = "m10c"
 paginate = 10
