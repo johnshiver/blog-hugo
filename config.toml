@@ -7,7 +7,7 @@ paginate = 10
 
 [params]
   author = "John Shiver"
-  description = "Writing Software in NYC"
+  description = "Writing Python + Go in NYC"
   [[params.social]]
     name = "github"
     url = "https://github.com/johnshiver"
