@@ -2,12 +2,17 @@
 
 GIT_REPO=https://github.com/johnshiver/blog-hugo.git
 WORKING_DIRECTORY=$HOME/projects/blog-hugo
-PUBLIC_WWW=$HOME/projects/blog-public
-BACKUP_WWW=$HOME/blog-backup
+PUBLIC_WWW=$HOME/static-deploy/blog-public
+BACKUP_WWW=$HOME/static-deploy/blog-backup
 MY_DOMAIN=www.johnshiver.org
 
 set -e
 
+mkdir -p $PUBLIC_WWW
+mkdir -p $BACKUP_WWW
+
+rm -rf $BACKUP_WWW;
+cp -r $PUBLIC_WWW $BACKUP_WWW
 rm -rf $WORKING_DIRECTORY
 
 git clone $GIT_REPO $WORKING_DIRECTORY
