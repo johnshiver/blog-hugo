@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on john-shiver</title>
+    <link>http://www.johnshiver.org/posts/</link>
+    <description>Recent content in Posts on john-shiver</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Mar 2017 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="http://www.johnshiver.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Implementing Merge Sort in Python</title>
+      <link>http://www.johnshiver.org/posts/merge-sort/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 -0500</pubDate>
+      
+      <guid>http://www.johnshiver.org/posts/merge-sort/</guid>
+      <description>Imagine having a phone book without the last names sorted alphabetically. Or a dictionary with words unorganized. Ever tried to find a web page on the internet without the help of a search engine to rank results by relevance?
+All of these tools derive their usefulness primarily from presenting information that has been sorted. Sorting algorithms are one of the key areas of research within computer science. After all, data is mostly useless without some sort of structure.</description>
+    </item>
+    
+    <item>
+      <title>Cracking the Coding Bootcamp</title>
+      <link>http://www.johnshiver.org/posts/cracking-the-coding-bootcamp/</link>
+      <pubDate>Thu, 26 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>http://www.johnshiver.org/posts/cracking-the-coding-bootcamp/</guid>
+      <description>Now that I’ve been in the tech industry for a few years since completing the Code Fellows program, I’m often asked for advice by others who want to take a similar path. Many people said my ideas were helpful, so I wanted to share them with a wider audience.
+This article specifically covers looking for a job after completing an advanced-level bootcamp.
+A Bit About Me Before starting Code Fellows’ Python course, I had no prior professional coding experience, but had taken a few Python classes online where I built some basic web apps.</description>
+    </item>
+    
+    <item>
+      <title>Writing a Singly Linked List in Python</title>
+      <link>http://www.johnshiver.org/posts/singly-linked-list/</link>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>http://www.johnshiver.org/posts/singly-linked-list/</guid>
+      <description>A lot of self-taught programmers don’t realize the importance of these concepts until they already have an interview lined up, and by then it’s already too late! I was fortunate enough to attend the Code Fellows Python Development Accelerator, where a section of the curriculum was dedicated to basic data structures and algorithms. But eight whirlwind weeks were not enough to solidify these concepts, so I thought it’d be beneficial, both for my own edification and for other budding Pythonistas, to write a series on basic data structures, starting with the linked list.</description>
+    </item>
+    
+  </channel>
+</rss>

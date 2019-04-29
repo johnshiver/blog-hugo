@@ -1,10 +1,10 @@
----
-title: "Cracking the Coding Bootcamp"
-date: 2017-01-26
-author: "John Shiver"
-draft: false
----
-
++++
+title="Cracking the Coding Bootcamp"
+date=2017-01-26
+author="John Shiver"
+tags=["coding bootcamp", "career development"]
+draft=false
++++
 
 Now that I’ve been in the tech industry for a few years since completing the Code Fellows program, I’m often asked for advice by others who want to take a similar path. Many people said my ideas were helpful, so I wanted to share them with a wider audience.
 
@@ -65,4 +65,5 @@ Talk to recruiters. I was lucky enough to get coffee with a number of great recr
 ## Final Thoughts
 
 That is how I spent my post-grad time before starting at OfferUp, and these techniques led to a number of interviews before I was hired. And that is what I want to end with: interviewing is a numbers game. No matter how awesome your engineering skills are, there are many factors out of your control. The only thing you can do is trust the process and recognize that you’re getting better. The more you interview, the better you will get at interviewing. If you keep at it, the odds eventually will fall in your favor.
+
 

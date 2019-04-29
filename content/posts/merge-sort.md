@@ -1,9 +1,10 @@
----
-title: "Implementing Merge Sort in Python"
-date: 2017-03-01
-tags: ["python", "algorithms", "tutorial"]
-draft: false
----
++++
+title="Implementing Merge Sort in Python"
+date=2017-03-01
+author="John Shiver"
+tags=["python", "algorithms", "tutorial"]
+draft=false
++++
 
 Imagine having a phone book without the last names sorted alphabetically. Or a dictionary with words unorganized. Ever tried to find a web page on the internet without the help of a search engine to rank results by relevance?
 
@@ -63,7 +64,6 @@ right = array[mid:]
 left = merge_sort(left)
 right = merge_sort(right)
 
-# then we merge the two halves together (more on this later)
 return merge(array, left, right)
 
 {{< /highlight >}}
@@ -114,9 +114,9 @@ return merge(array, left, right)
 ## Time Complexity
 Finally, what is the time complexity of this algorithm? The goal of the recursive function was to reduce the size of the input list recursively until we reached a list of size one or smaller. This should ring a bell! Cutting an input’s size in half during each recursive iteration is a O(log n) operation. That is, it will take log(n) recursive calls until the base case is reached.
 The other half of our merge sort algorithm is combining the two sorted lists into one list. Taking a look at the merge function, you are basically just comparing elements and sticking them in the final list one at a time. As the number of elements in each list grows, the number of comparisons grows at the same rate as the size of the list. That is, two lists of size 5 would need 5 comparisons for each merge, two lists of size 100 would require 100 comparisons and so on. This is very clearly a linear function, or O(n).
-Putting it together, the merge sort algorithm performs an O(n) merge O(log n) times, which is expressed as an O(n*log(n)) algorithm. That’s very speedy compared to traditional O(n2) algorithms!
+Putting it together, the merge sort algorithm performs an O(n) merge O(log n) times, which is expressed as an O(nlog(n)) algorithm. That’s very speedy compared to traditional O(n2) algorithms!
 
 That concludes our basic introduction to merge sort. Other considerations I’d encourage as an exercise for the reader are memory as a function of n and whether the sort is “stable,” and so on.
-What is important to take away is that there is no sorting algorithm on earth that beats O(nlog(n)). All the best sorting algorithms reach this same value. The reason there are so many different sorting algorithms lies in the details—choosing one over another often depends on the nature of the data you are sorting and other considerations. In the vast majority of cases, the built-in sort method will perform far better than any sorting implementation you write, but now you know the cost for each call is at least O(nlog(n)). Happy sorting!
+What is important to take away is that there is no sorting algorithm on earth that beats O(nlog(n)). All the best sorting algorithms reach this same value. The reason there are so many different sorting algorithms lies in the details—choosing one over another often depends on the nature of the data you are sorting and other considerations. In the vast majority of cases, the built-in sort method will perform far better than any sorting implementation you write, but now you know the cost for each call is at least O(nlog(n)).
 
 

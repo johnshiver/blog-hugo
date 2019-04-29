@@ -3,7 +3,7 @@ baseURL = "http://www.johnshiver.org"
 title = "john-shiver"
 themesDir = "themes/"
 theme = "m10c"
-paginate = 5
+paginate = 10
 
 [params]
   author = "John Shiver"
