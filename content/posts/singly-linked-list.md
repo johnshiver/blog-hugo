@@ -1,5 +1,5 @@
 +++
-title = "Writing a Singly Linked List in Python"
+title = "Implementing a Singly Linked List in Python"
 date = "2017-01-04"
 tags = ["python", "algorithms", "tutorial"]
 +++
