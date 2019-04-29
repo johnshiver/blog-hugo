@@ -1,5 +1,5 @@
 +++
-title = "Implementing Merge Sort"
+title = "Implementing Merge Sort in Python"
 date = "2017-03-01"
 tags = ["python", "algorithms"]
 +++
