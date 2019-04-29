@@ -1,9 +1,7 @@
 +++
-title="Writing a Singly Linked List in Python"
-date=2017-01-04
-author="John Shiver"
-tags=["python", "algorithms", "tutorial"]
-draft=false
+title = "Writing a Singly Linked List in Python"
+date = "2017-01-04"
+tags = ["python", "algorithms", "tutorial"]
 +++
 
 A lot of self-taught programmers don’t realize the importance of these concepts until they already have an interview lined up, and by then it’s already too late! I was fortunate enough to attend the Code Fellows Python Development Accelerator, where a section of the curriculum was dedicated to basic data structures and algorithms. But eight whirlwind weeks were not enough to solidify these concepts, so I thought it’d be beneficial, both for my own edification and for other budding Pythonistas, to write a series on basic data structures, starting with the linked list.

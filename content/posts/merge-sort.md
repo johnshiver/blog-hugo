@@ -1,9 +1,7 @@
 +++
-title="Implementing Merge Sort in Python"
-date=2017-03-01
-author="John Shiver"
-tags=["python", "algorithms", "tutorial"]
-draft=false
+title = "Implementing Merge Sort"
+date = "2017-03-01"
+tags = ["python", "algorithms"]
 +++
 
 Imagine having a phone book without the last names sorted alphabetically. Or a dictionary with words unorganized. Ever tried to find a web page on the internet without the help of a search engine to rank results by relevance?
@@ -118,5 +116,4 @@ Putting it together, the merge sort algorithm performs an O(n) merge O(log n) ti
 
 That concludes our basic introduction to merge sort. Other considerations I’d encourage as an exercise for the reader are memory as a function of n and whether the sort is “stable,” and so on.
 What is important to take away is that there is no sorting algorithm on earth that beats O(nlog(n)). All the best sorting algorithms reach this same value. The reason there are so many different sorting algorithms lies in the details—choosing one over another often depends on the nature of the data you are sorting and other considerations. In the vast majority of cases, the built-in sort method will perform far better than any sorting implementation you write, but now you know the cost for each call is at least O(nlog(n)).
-
 

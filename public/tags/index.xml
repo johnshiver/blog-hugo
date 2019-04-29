@@ -2,57 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on john-shiver</title>
-    <link>http://www.johnshiver.org/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on john-shiver</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Mar 2017 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 01 Mar 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.johnshiver.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>algorithms</title>
-      <link>http://www.johnshiver.org/tags/algorithms/</link>
-      <pubDate>Wed, 01 Mar 2017 00:00:00 -0500</pubDate>
+      <link>/tags/algorithms/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.johnshiver.org/tags/algorithms/</guid>
+      <guid>/tags/algorithms/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>http://www.johnshiver.org/tags/python/</link>
-      <pubDate>Wed, 01 Mar 2017 00:00:00 -0500</pubDate>
+      <link>/tags/python/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.johnshiver.org/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>http://www.johnshiver.org/tags/tutorial/</link>
-      <pubDate>Wed, 01 Mar 2017 00:00:00 -0500</pubDate>
+      <link>/tags/tutorial/</link>
+      <pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.johnshiver.org/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>career development</title>
-      <link>http://www.johnshiver.org/tags/career-development/</link>
-      <pubDate>Thu, 26 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>http://www.johnshiver.org/tags/career-development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>coding bootcamp</title>
-      <link>http://www.johnshiver.org/tags/coding-bootcamp/</link>
-      <pubDate>Thu, 26 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>http://www.johnshiver.org/tags/coding-bootcamp/</guid>
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     
