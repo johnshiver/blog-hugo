@@ -16,7 +16,6 @@ The node is where data is stored in the linked list (they remind me of those pla
 
 
 {{< highlight python >}}
-
 class Node(object):
 
     def __init__(self, data=None, next_node=None):
@@ -31,7 +30,6 @@ class Node(object):
 
     def set_next(self, new_next):
         self.next_node = new_next
-
 {{< /highlight >}}
 
 The node initializes with a single datum and its pointer is set to None by default (this is because the first node inserted into the list will have nothing to point at!). We also add a few convenience methods: one that returns the stored data, another that returns the next node (the node to which the object node points), and finally a method to reset the pointer to a new node. These will come in handy when we implement the Linked List.
@@ -51,11 +49,9 @@ The first architectural piece of the linked list is the ‘head node’, which i
 
 
 {{< highlight python >}}
-
 class LinkedList(object):
     def __init__(self, head=None):
         self.head = head
-
 {{< /highlight >}}
 
 ## Insert
@@ -68,7 +64,7 @@ As for time complexity, this implementation of insert is constant O(1) (efficien
    def insert(self, data):
         new_node = Node(data)
         new_node.set_next(self.head)
-       self.head = new_node
+        self.head = new_node
 {{< /highlight >}}
 
 ## Size

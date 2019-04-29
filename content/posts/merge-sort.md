@@ -25,16 +25,16 @@ y = [8]
 
 {{< /highlight >}}
 
-Both x and y are size one and are therefore sorted. Combining xand y into a new sorted list, z, is simple and fast:
+Both x and y are size one and are therefore sorted. Combing the two into a sorted list is simple.
 
 {{< highlight python >}}
+
 z = []
 if x[0] < y[0]:
-    z.append(x[0])
-    z.append(y[0])
+    z = x + y
 else:
-    z.append(y[0])
-    z.append(x[0])
+    z = y + x
+
 {{< /highlight >}}
 
 Easy enough!
@@ -70,6 +70,7 @@ Again, if you are not comfortable with recursion, it might take a few reads to w
 Let’s look at the merge function line by line:
 
 {{< highlight python >}}
+
 def merge(array, left, right):
     # index pointers for array, left, and right
     m = l = r = 0
@@ -81,6 +82,7 @@ def merge(array, left, right):
 	    array[m] = right[r]
 	    r += 1
 	m += 1
+
 {{< /highlight >}}
 
 The merge function takes the original list (unsorted) and its two sorted halves: the left list and the right list. Here we are reusing the original list to create a sorted list, but you could also create a new list altogether and add your arrays to that.
@@ -88,6 +90,7 @@ The basic idea is to compare elements from the left list to elements of the righ
 
 
 {{< highlight python >}}
+
 while l < len(left):
     array[m] = left[l]
     l += 1
@@ -97,16 +100,18 @@ while r < len(right):
     r += 1
     m += 1
 return array
+
 {{< /highlight >}}
 
 That’s all there is to the merge sort! The left and right list that emerge from recursion will be sorted, and your algorithm will happily merge these increasingly large sorted lists until you are a left with your initial array, sorted.
 
 
 {{< highlight python >}}
-# left and right will always be sorted
+
 left = merge_sort(left)
 right = merge_sort(right)
 return merge(array, left, right)
+
 {{< /highlight >}}
 
 ## Time Complexity
@@ -116,4 +121,3 @@ Putting it together, the merge sort algorithm performs an O(n) merge O(log n) ti
 
 That concludes our basic introduction to merge sort. Other considerations I’d encourage as an exercise for the reader are memory as a function of n and whether the sort is “stable,” and so on.
 What is important to take away is that there is no sorting algorithm on earth that beats O(nlog(n)). All the best sorting algorithms reach this same value. The reason there are so many different sorting algorithms lies in the details—choosing one over another often depends on the nature of the data you are sorting and other considerations. In the vast majority of cases, the built-in sort method will perform far better than any sorting implementation you write, but now you know the cost for each call is at least O(nlog(n)).
-
