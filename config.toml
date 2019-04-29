@@ -1,5 +1,5 @@
 languageCode = "en-us"
-baseURL = "http://www.johnshiver.org"
+baseUrl = "/"
 title = "john-shiver"
 themesDir = "themes/"
 theme = "m10c"
