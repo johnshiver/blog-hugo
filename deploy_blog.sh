@@ -17,6 +17,6 @@ rm -rf $WORKING_DIRECTORY
 
 git clone --recurse-submodules $GIT_REPO $WORKING_DIRECTORY
 rm -rf $PUBLIC_WWW/
-/usr/local/bin/hugo -s $WORKING_DIRECTORY -d $PUBLIC_WWW -b "http://${MY_DOMAIN}"
+/home/jshiver/go/bin/hugo -s $WORKING_DIRECTORY -d $PUBLIC_WWW -b "http://${MY_DOMAIN}"
 rm -rf $WORKING_DIRECTORY
 trap - EXIT
