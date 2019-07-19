@@ -62,7 +62,7 @@ Using this insight, we can construct our SQL query. We will need to make use of 
 built in function `row_number()` to create our index numbers, and at the end use group by
 to identify streaks of data whose created_at subtracted by their row number equal the same date.
 
-The final SQL looks like this:
+Putting these ideas together, the final SQL looks like this:
 
 {{< highlight sql>}}
 
@@ -86,7 +86,9 @@ The final SQL looks like this:
 
 {{< /highlight >}}
 
-I hope this was helpful for other folks looking to do something similar.
+I hope this was helpful for other folks looking to do something similar. If you are interested
+in the rest of my pomodoro code, the source code lives
+[here.](https://www.github.com/johnshiver/pomodoro/)
 
 Some resources that helped:
 [10 sql tricks](https://jaxenter.com/10-sql-tricks-that-you-didnt-think-were-possible-125934.html)
