@@ -10,12 +10,12 @@ with Go and VueJS. Ive slowly been adding stat related features, the most pomodo
 you completed in one day, line charts depicting your progress over the past few
 weeks, etc.
 
-Another quick stat I wanted to add was the longest streak of days a user completed a pomodoro,
-This seemed like a common enough query, surely this isnt too much trouble in SQL right?
-If you're reading this Im sure by now you've discovered that this is actually a pretty tricky
-problem to tackle with SQL.
+Another quick stat I wanted to add was the longest consecutive streak of days in which a given
+user completed at least one pomodoro. This seemed like a common enough query, surely this isnt too
+much trouble in SQL right? If you are reading this article then you probably already know
+this is a tricky problem to tackle with SQL.
 
-First lets look at my pomodoro table definition:
+To begin, take a look at my pomodoro table definition:
 
 {{< highlight sql>}}
 CREATE TABLE "pomodoro_sessions" (
@@ -27,13 +27,12 @@ CREATE TABLE "pomodoro_sessions" (
 {{< /highlight >}}
 
 Not too much going on here, to construct our longest streak query we only need `created_at`
-and `user_id`.
+and `user_id`. Sadly this is where the easy part ends. From here we must identify some unique
+aspect of the data that makes up a consecutive streak.
 
-From there you must make a key insight as to the nature of a streak of data, we must
-identify some unique aspect of the data that makes up a streak.
 What would happen if you assigned an index to each row of the streak, can you see a pattern?
 
-Consider this example streak:
+Consider this example data which includes streak:
 
 {{< highlight sql >}}
 
@@ -42,11 +41,12 @@ Index  Created_At
 1      1/2/2019
 2      1/3/2019
 3      1/4/2019
+4      1/6/2019
 
 {{< /highlight >}}
 
-The key insight is that if you substract the index number from the creation date, a streak
-will all have the same creation date, as shown below:
+The key insight is that if you substract the index number from the creation date a streak
+will share the same creation date, as shown below:
 
 {{< highlight sql >}}
 
@@ -55,6 +55,7 @@ Index  Created_At    Created_At - Index
 1      1/2/2019      1/1/2019
 2      1/3/2019      1/1/2019
 3      1/4/2019      1/1/2019
+4      1/6/2019      1/2/2019
 
 {{< /highlight >}}
 
