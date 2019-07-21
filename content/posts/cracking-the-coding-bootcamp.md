@@ -1,7 +1,7 @@
 +++
 title = "Cracking the Coding Bootcamp"
 date = "2017-01-26"
-tags = ["beginner", "career", "bootcamp"]
+tags = ["tutorial"]
 +++
 
 Now that I’ve been in the tech industry for a few years since completing the Code Fellows program, I’m often asked for advice by others who want to take a similar path. Many people said my ideas were helpful, so I wanted to share them with a wider audience.

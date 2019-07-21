@@ -1,7 +1,7 @@
 +++
 title = "Implementing Merge Sort in Python"
 date = "2017-03-01"
-tags = ["python", "algorithms"]
+tags = ["python", "algorithms", "tutorial"]
 +++
 
 Imagine having a phone book without the last names sorted alphabetically. Or a dictionary with words unorganized. Ever tried to find a web page on the internet without the help of a search engine to rank results by relevance?

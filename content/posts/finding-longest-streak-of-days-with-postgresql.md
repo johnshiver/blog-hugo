@@ -1,7 +1,7 @@
 ---
-title: "Finding Longest Streak of Days With Postgresql"
+title: "Finding the Longest Streak of Days With Postgresql"
 date: 2019-06-08T00:36:08-04:00
-tags: ["sql"]
+tags: ["sql", "tutorial"]
 draft: false
 ---
 
