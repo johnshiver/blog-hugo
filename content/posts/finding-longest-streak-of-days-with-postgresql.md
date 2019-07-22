@@ -59,11 +59,11 @@ Index  Created_At    Created_At - Index
 
 {{< /highlight >}}
 
-Using this insight, we can construct our SQL query. We will need to make use of the PostgreSQL
-built in function `row_number()` to create our index numbers, and at the end use group by
-to identify streaks of data whose created_at subtracted by their row number equal the same date.
+Using this insight we can construct our SQL query. To map `index` to `created_at` we need to make use
+of the PostgreSQL window function [row_number()](https://www.postgresql.org/docs/11/functions-window.html).
+After that its a matter of subtracting `created_at` by its row_number `index` and grouping the matches together.
 
-Putting these ideas together, the final SQL looks like this:
+The final SQL looks like this:
 
 {{< highlight sql>}}
 
@@ -87,9 +87,12 @@ Putting these ideas together, the final SQL looks like this:
 
 {{< /highlight >}}
 
-I hope this was helpful for other folks looking to do something similar. If you are interested
-in the rest of my pomodoro code, the source code lives
+I hope this was helpful, if you have any questions
+leave a comment below! The SQL and the rest of the source code lives
 [here.](https://www.github.com/johnshiver/pomodoro/)
 
-Some resources that helped:
-[10 sql tricks](https://jaxenter.com/10-sql-tricks-that-you-didnt-think-were-possible-125934.html)
+#### References
+
+ * [10 sql tricks](https://jaxenter.com/10-sql-tricks-that-you-didnt-think-were-possible-125934.html)
+
+ * [Practical row_number examples](http://www.postgresqltutorial.com/postgresql-row_number/)
