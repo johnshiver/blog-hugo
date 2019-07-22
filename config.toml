@@ -1,8 +1,9 @@
 baseUrl = "http://www.johnshiver.org"
 title = "john-shiver"
 theme = "m10c"
-paginate = 5
+paginate = 4
 googleAnalytics = "UA-144264343-1"
+disqusShortname = "johnshiver"
 
 [params]
   author = "John Shiver"

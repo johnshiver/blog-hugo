@@ -16,7 +16,7 @@ in Computer Science or related field, but have an undergrad degree in another fi
 is very reasonable at around $3000, and if you pass the course with a B+ or higher NYU will
 admit you straight into the Masters program.
 
-For [full disclosure](https://jaxenter.com/10-sql-tricks-that-you-didnt-think-were-possible-125934.html)
+For [full disclosure](https://www.credential.net/7602sf1x)
 I received an A in this course but chose not to pursue the Masters at this time.
 
 #### Curicculum Overview
