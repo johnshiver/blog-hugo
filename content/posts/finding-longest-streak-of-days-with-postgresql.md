@@ -107,7 +107,8 @@ The output of which might look like:
 {{< /highlight >}}
 
 
-Here is the final SQL statement, grouping the matches:
+Here is the final SQL statement, grouping the matches and subtracting the largest date in
+the group from the smallest to calculate the length of the streak.
 
 {{< highlight sql>}}
 
