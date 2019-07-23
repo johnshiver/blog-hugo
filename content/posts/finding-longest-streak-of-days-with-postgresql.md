@@ -63,7 +63,49 @@ Using this insight we can construct our SQL query. To map `index` to `created_at
 of the PostgreSQL window function [row_number()](https://www.postgresql.org/docs/11/functions-window.html).
 After that its a matter of subtracting `created_at` by its row_number `index` and grouping the matches together.
 
-The final SQL looks like this:
+Here is the SQL mapping `row_number()` to `created_date`:
+
+{{< highlight sql>}}
+
+ WITH pomo_dates AS (
+ SELECT DISTINCT created_at::date created_date
+ FROM pomodoro_sessions
+ WHERE user_id=$1
+ ),
+ pomo_date_groups AS (
+ SELECT
+   row_number() OVER (ORDER BY created_date),
+   created_date,
+   created_date::DATE - CAST(row_number() OVER (ORDER BY created_date) as INT) AS grp
+ FROM pomo_dates
+   )
+ SELECT
+   *
+ FROM pomo_date_groups;
+
+{{< /highlight >}}
+
+Output of which might look like:
+
+{{< highlight sql>}}
++--------------+----------------+------------+
+|   row_number | created_date   | grp        |
+|--------------+----------------+------------|
+|            1 | 2019-03-24     | 2019-03-23 |
+|            2 | 2019-03-25     | 2019-03-23 |
+|            3 | 2019-03-26     | 2019-03-23 |
+|            4 | 2019-03-27     | 2019-03-23 |
+|            5 | 2019-04-01     | 2019-03-27 |
+|            6 | 2019-04-02     | 2019-03-27 |
+|            7 | 2019-04-03     | 2019-03-27 |
+|            8 | 2019-04-08     | 2019-03-31 |
+|            9 | 2019-04-09     | 2019-03-31 |
+|           10 | 2019-04-12     | 2019-04-02 |
+|           11 | 2019-04-16     | 2019-04-05 |
++--------------+----------------+------------+
+{{< /highlight >}}
+
+Here is the final SQL statement, grouping the matches:
 
 {{< highlight sql>}}
 
