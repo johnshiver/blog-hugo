@@ -85,7 +85,8 @@ Here is the SQL mapping `row_number()` to `created_date`:
 
 {{< /highlight >}}
 
-Output of which might look like:
+
+The output of which might look like:
 
 {{< highlight sql>}}
 +--------------+----------------+------------+
@@ -104,6 +105,7 @@ Output of which might look like:
 |           11 | 2019-04-16     | 2019-04-05 |
 +--------------+----------------+------------+
 {{< /highlight >}}
+
 
 Here is the final SQL statement, grouping the matches:
 
@@ -128,6 +130,7 @@ Here is the final SQL statement, grouping the matches:
  LIMIT 1
 
 {{< /highlight >}}
+
 
 I hope this was helpful, if you have any questions
 leave a comment below! The SQL and the rest of the source code lives
